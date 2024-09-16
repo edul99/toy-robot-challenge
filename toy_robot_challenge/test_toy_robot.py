@@ -79,4 +79,5 @@ def test_toy_robot():
     print("All tests passed!")
 
 if __name__ == "__main__":
+    # Each test cases could be programmed into separate functions as in real world examples, but opted to combine all in one for simplicity.
     test_toy_robot()
