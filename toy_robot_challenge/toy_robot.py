@@ -49,8 +49,6 @@ class ToyRobot:
 
     def process_command(self, command):
         parts = command.strip().split(maxsplit=1)
-        parts = [part.upper() for part in parts]
-
         if parts[0] == 'PLACE':
             if len(parts) == 2:
                 args = [arg.strip() for arg in parts[1].split(',')]
@@ -93,7 +91,8 @@ def main():
     # Accept inputs until user promted to stop
     while True:
         command = input("Enter command (type EXIT to stop): ").strip()
-        if command.upper() == "EXIT":
+        command = command.upper()
+        if command == "EXIT":
             break
 
         # Outputs especially errors can be printed immediately at the command functions but opted to return instead for testability
