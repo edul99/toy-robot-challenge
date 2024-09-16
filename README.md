@@ -78,9 +78,3 @@ Unit tests are included to verify the functionality of the robot simulator.
 ```
 All tests passed!
 ```
-
-## Future Improvements
-
-- Implement more complex scenarios and error handling.
-- Add support for multiple toy robots on the table.
-- Create a GUI for better visualization of the robot's movements.
